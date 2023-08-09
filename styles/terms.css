@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    position: relative;
+}
+
+.container aside {
+    min-width: 300px;
+    width: 300px;
+    height: auto;
+    padding: 16px 8px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+
+.container .section {
+    margin-left: 310px;
+    height: calc(100vh - 150px);
+    padding: 16px 8px;
+    background-color: yellow;
+    overflow-y: scroll;
+}
+
+@media screen and (max-width: 576px) {
+    .container aside {
+        display: none;
+    }
+
+    .container .section {
+        margin-left: 0px;
+    }
+
+}
